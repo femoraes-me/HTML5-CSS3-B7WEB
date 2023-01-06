@@ -1,0 +1,244 @@
+/** VARIÁVEIS **/
+:root {
+    --header-color: #5a5a5a;
+    --h1-color: #393C41;
+    --h2-color: #6E7178;
+    --dark-btn-bg: rgba(23, 26, 32, 0.8);
+    --light-btn-bg: rgba(255, 255, 255, 0.65);
+    --dark-btn-color: #fff;
+    --light-btn-color: #222;
+    --hover-menu: rgba(130, 130, 130, 0.1);
+}
+
+/** FONTES **/
+@font-face {
+    font-family: 'GothamMedium';
+    src: url('../fonts/GothamMedium.otf');
+}
+
+@font-face {
+    font-family: 'GothamBook';
+    src: url('../fonts/GothamBookRegular.otf');
+}
+
+body {
+    margin: 0;
+    font-family: 'GothamMedium', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/** CABEÇALHO **/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+
+header ul, header li {    
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+.header1 {
+    line-height: 50px;
+}
+
+.header1 .logo {
+    width: 110px;
+    margin-left: 40px;
+}
+
+.header2 ul,
+.header3 ul {
+    display: flex;
+}
+
+.header2 li,
+.header3 li {
+    padding: 8px 16px;
+}
+
+.header2 li:hover,
+.header3 li:hover,
+aside ul li:hover {
+    background-color: var(--hover-menu);
+    border-radius: 12px;
+}
+
+.header3 .menu,
+.header3 .menu-icon {
+    margin-right: 30px;
+}
+
+.menu {
+    display: block;
+}
+
+.menu-icon {
+    display: none;
+}
+
+/* AREA PRINCIPAL */
+main {
+    height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+main .info {
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main h1 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 40px;
+    color: var(--h1-color);
+}
+
+main h2 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 14px;
+    font-family: 'GothamBook', Helvetica, Arial, sans-serif;
+    color: var(--h2-color);
+}
+
+main h2 a {
+    color: var(--h1-color);
+}
+
+
+/*  BOTOES  */
+section {
+    position: fixed;
+    bottom: 40px;
+    right: 0;
+    left: 0;
+}
+
+section .buttons-area {
+    display: flex;
+    justify-content: center;
+}
+
+section .buttons-area a {
+    display: block;
+    width: 220px;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+    margin: 0 15px;
+    border-radius: 20px;
+}
+
+section .dark-btn {
+    background-color: var(--dark-btn-bg);
+    color: var(--dark-btn-color);
+}
+
+section .light-btn {
+    background-color: var(--light-btn-bg);
+    color: var(--light-btn-color);
+}
+
+section .arrow-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 30px;
+}
+
+/* Animação da Flecha */
+@keyframes arrow {
+    0% {
+        margin-top: 0px;
+    }
+    25% {
+        margin-top: 10px;
+    }
+    30% {
+        margin-top: 0px;
+    }
+    40% {
+        margin-top: 5px;
+    }
+    50% {
+        margin-top: 0px;
+    }
+    100% {
+        margin-top: 0px;
+    }
+}
+
+section .arrow {
+    height: 15px;
+    animation-name: arrow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+/* MENU LATERAL */
+#aside-area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 300px;
+    height: 100vh;
+    background-color: var(--dark-btn-color);
+    color: var(--h1-color);
+    transition: all ease 0.8s;
+    z-index: 999;
+    margin-right: -300px;
+    filter: none;
+}
+
+#aside-area ul {
+    list-style: none;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+#aside-area ul li {
+    width: 80%;
+    padding: 12px 20px;
+}
+
+#aside-area ul a {
+    text-decoration: none;
+    color: var(--header-color);
+}
+
+#aside-area .exit {
+    padding: 30px;
+    float: right;
+}
+
+#aside-area .exit a {
+    text-decoration: none;
+    color: var(--h1-color);
+}
+
+#aside-area .exit i {
+    cursor: pointer;
+}

@@ -1,0 +1,454 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+}
+
+body {
+    background-color: #F6F6F6;
+    color: #333;
+}
+
+.menumobile {
+    display: none;
+}
+
+
+
+/* BARRA DE TOPO 1 */
+
+.topo {
+    height: 30px;
+    background-color: #333;
+}
+
+.topoint {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.topoleft {
+    width: 50%;
+    height: 30px;
+    float: left;
+}
+
+.toporight {
+    width: 50%;
+    height: 28px;
+    float: right;
+    margin-top: 2px;
+}
+
+.topoleft ul {
+    list-style: none;
+}
+
+.topoleft li {
+    float: left;
+    color: #F6F6F6;
+    line-height: 30px;
+    margin: 0 8px;
+}
+
+.topoleft li a {
+    text-decoration: none;
+    color: #F6F6F6
+}
+
+.topoleft a.ativo {
+    color: #B90504;
+}
+
+.topoleft a:hover {
+    color: #990100;
+}
+
+.topobusca {
+    width: 110px;
+    height: 26px;
+    outline: 0;
+}
+
+.toporight a {
+    float: right;
+}
+
+.toporight input {
+    float: right;
+}
+
+.toporight img {
+    margin-right: 4px;
+}
+
+
+/* BARRA DE TOPO 2 */
+
+.topo2 {
+    color: 333;
+    height: 95px;
+}
+
+.topo2int {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+    height: 95px;
+}
+
+.logo {
+    width: 320px;
+    height: 89px;
+    float: left;
+    margin-top: 6px;
+}
+
+.topo2 .banner {
+    width: 650px;
+    height: 80px;
+    float: right;
+    margin-top: 7px;
+    background-color: #B90504;
+    color: #F6F6F6;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+
+/* MENU */
+
+.menu {
+    height: 40px;
+    background-color: #B90504;
+}
+
+.menuint {
+    width: 100%;
+    max-width: 1040px;
+    height: 40px;
+    margin: auto;
+}
+
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.menu li:hover {
+    background-color: #990100;
+}
+
+.menu a {
+    color: #F6F6F6;
+    text-decoration: none;
+}
+
+.submenu {
+    width: 150px;
+    background-color: #B90504;
+    position: absolute;
+    display: none;
+    margin-left: -8px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenuitem {
+    width: 140px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.submenuitem:hover {
+    width: 100%;
+    background-color: #990100;
+}
+
+
+/* Ultimas noticias */
+
+.ultimasnoticias {
+    height: 40px;
+}
+
+.ultimasnoticiasint {
+    width: 100%;
+    height: 40px;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.ultimas-noticias-area {
+    height: 28px;
+    background-color: #F6F6F6;
+    margin-top: 10px;
+    border: 1px solid #E8E8E8
+}
+
+.ultimas-noticias-titulo {
+    background-color: #B90504;
+    color: #F6F6F6;
+    height: 26px;
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 10px;
+    font-size: 14px;
+}
+
+.ultimas-noticias-noticia {
+    color: #333;
+    height: 28px;
+    line-height: 28px;
+    padding: 0 5px;
+    display: inline-block;
+ 
+}
+
+
+/* MAIN */
+
+.container {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.right-side {
+    width: 275px;
+    float: right;
+    margin-left: 12px;
+}
+
+.left-side {
+    float: left;
+    width: 753px;
+}
+
+.slideshow {
+    height: 335px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.slide-pointers {
+    position: absolute;
+    height: 30px;
+    width: 200px;
+}
+
+.bolinha {
+    float: left;
+    background-color: #E8E8E8;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bolinha-ativa {
+    background-color: #B90504;
+}
+
+.bolinha:hover {
+    background-color: #990100;
+}
+
+.slideshow-area {
+    height: 335px;
+    background-color: #990100;
+    transition: all 0.3s;
+}
+
+.slide {
+    height: 335px;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-info {
+    height: 70px;
+    background-image: url('../images/slideshow_bg.png');
+    background-size: auto 70px;
+    margin-top: 265px;
+}
+
+.slide-info-titulo {
+    font-size: 20px;
+    color: #F6F6F6;
+    padding: 18px 0 0 10px;
+}
+
+.slide-info-subtitulo {
+    font-size: 13px;
+    color: #F6F6F6;
+    padding: 3px 10px;
+}
+
+.widget {
+    border: 1px solid #E8E8E8;
+    background-color: #F6F6F6;
+    margin-bottom: 10px;
+}
+
+.widget-titulo {
+    height: 30px;
+    border-bottom: 1px solid #E8E8E8;
+    background-color: #E8E8E8;
+    line-height: 30px;
+    padding-left: 5px;
+    font-size: 13px;
+}
+
+.widget-conteudo {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.noticia-item {
+    font-size: 14px;
+    text-align: left;
+    margin: 0px 8px;
+    padding: 8px 0px;
+    border-bottom: 1px solid #E8E8E8;
+}
+
+.noticia-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.noticia-item a:hover {
+    color: #990100;
+}
+
+.noticia-area-1 {
+    width: 410px;
+    float: left;
+    height: 420px;  
+}
+
+.noticia-area-2 {
+    width: 320px;
+    height: 420px;
+    float: left;
+}
+
+.noticia-item-1 {
+    text-align: justify;
+    height: 88px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.noticia-img {
+    float: left;
+    width: 80px;
+    height: 80px;
+    border: 1px solid #E8E8E8;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.noticia-titulo {
+    float: left;
+    width: 226px;
+    margin-left: 6px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.noticia-titulo:hover {
+    color: #990100;
+}
+
+.noticia-info {
+    width: 226px;
+    font-size: 12px;
+    margin-left: 6px;
+    color: #8E8E8E;
+    float: left;
+}
+
+.noticia-info:hover {
+    color: #333;
+}
+
+.noticia-big {
+    margin-left: 10px;
+}
+
+.noticia-big .noticia-img {
+    width: 384px;
+    height: 220px;
+}
+
+.noticia-big .noticia-img {
+    width: 384px;
+    height: 220px;
+}
+
+.noticia-big .noticia-titulo {
+    font-size: 28px;
+    width: 384px;
+}
+
+
+/* Footer */
+
+footer {
+    height: 100px;
+    background-color: #333;
+    color: #F6F6F6;
+    font-size: 16px;
+}
+
+.footer-int {
+    width: 100%;
+    max-width: 1040px;
+    margin: auto;
+}
+
+.footer-left {
+    padding-top: 70px;
+    float: left;
+}
+
+.footer-right {
+    float: right;
+    padding-top: 70px;
+}
+
+.footer-right ul {
+    list-style: none;
+}
+
+.footer-right li {
+    float: left;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.footer-right li:hover {
+    color: #990100;
+}

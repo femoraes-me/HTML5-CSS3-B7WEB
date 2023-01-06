@@ -1,0 +1,54 @@
+/* MEDIA QUERIES */
+@media (max-width: 1200px) {
+    header .header2 {
+        display: none;
+    }
+
+    header .header3 li{
+        display: none;
+    }
+
+    header .header3 li.menu {
+        display: block;
+        margin-right: 20px;
+    }    
+
+    .header3 li.menu {
+        display: none !important;
+    }
+    
+    .menu-icon {
+        display: block;
+    }
+
+    .header3 .menu-icon {
+        height: 16px;
+        width: 18px;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .header3 .menu-icon div {
+        height: 2px;
+        background-color: var(--header-color);
+    }
+}
+
+@media (max-width: 600px) {
+    main {
+        background-image: url('../images/bg-mobile.jpg');
+    }
+
+    section .buttons-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section .buttons-area a {
+        margin: 10px 20px;
+        width: calc(100vw - 100px);
+    }
+}
+
