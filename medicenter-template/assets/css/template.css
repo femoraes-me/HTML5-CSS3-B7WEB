@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    border: 0;
+    background-color: #f1f1f1;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 120px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+nav ul,
+nav li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    display: block;
+    padding: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #727272;
+    font-size: 13px;
+}
+
+nav .active a,
+nav a:hover {
+    background-color: #39aae1;
+    color: #f1f1f1;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    background-image: url('../images/img1.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 670px;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.banner-headline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.banner-headline h1,
+.banner-headline h2 {
+    color: #f1f1f1;    
+    text-shadow: 0px 1px 0px #727272;
+    margin: 0;
+    padding: 0;
+    max-width: 400px;
+}
+
+.banner-headline h1 {
+    font-size: 50px;    
+}
+
+.banner-headline h2 {
+    font-size: 18px;
+    margin-top: 20px;
+} 
+
+.banner-options {
+    display: flex;
+    height: 210px;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+.banner1 {
+    background-color: #39aae1;   
+}
+
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+
+.banner-title {
+    font-size: 18px;
+}
+
+.banner-desc {
+    font-size: 14px;
+    margin: 20px 0;
+}
+
+.banner-options a{
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #f1f1f1;
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.banner3 .banner-title {
+    margin-bottom: 20px;
+}
+
+.banner-horarios {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.banner-hora {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    align-items: center;
+    font-size: 13px;
+}
+
+#geral {
+    display: flex;
+    justify-content: center;
+}
+
+#geral section {
+    flex: 2;
+}
+
+#geral aside {
+    flex: 1;
+}
+
+.widget-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.widget-title-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #1e1e1e;
+}
+
+.widget-title-bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+    margin-top: 5px;
+}
+
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+article a {
+    text-decoration: none;
+   
+}
+
+article .news-data {
+    display: flex;
+}
+
+article .news-posted-at {
+    background-color: #2b4c99;
+    color: #f1f1f1;
+    font-size: 10px;
+    padding: 10px;
+    margin-right: 2px;
+}
+
+article .news-comments {
+    background-color: #39aae1;
+    color: #f1f1f1;
+    font-size: 10px;
+    padding: 10px;
+}
+
+article .news-thumbnail {
+    margin-top: 10px;
+}
+
+article .news-thumbnail img {
+    width: 100%;
+    height: 200px;
+}
+
+article .news-title {
+    margin: 20px 0;
+    color: #1e1e1e;
+    font-size: 20px;
+}
+
+article .news-resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 40px;
+}
+
+.departament-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.departament {
+    width: 150px;
+    height: 150px;
+    background-color: #0079c7;
+    margin: 0 1px 28px 1px;
+}
+
+.departament img {
+    width: 100%;
+    height: 100%;
+}
+
+.consulta-contato {
+    display: flex;
+    height: 60px;
+    border-bottom: #ddd 1px solid;
+}
+
+.consulta-desc {
+    color: #5c5c5c;
+    font-size: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+}
+
+.consulta-contato-text {
+    font-size: 13px;
+    line-height: 60px;
+}
+
+.consulta-contato i {
+    margin-top: 15px;
+    color: #ccc;
+    margin-right: 8px;
+}
+
+.consulta-contato-text a {
+    color: #36a9e1;
+}
+
+.consulta-contato-text a:hover {
+    color: #2b4c99;
+}
+
+
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-menu {
+    flex: 1;
+    display: flex;
+}
+
+.footer-menu a {
+    display: block;
+    text-decoration: none;
+    color: #f1f1f1;
+    padding: 20px;
+}
+
+.footer-menu-1,
+.footer-menu-2,
+.footer-menu-3 {
+    flex: 1;
+}
+
+.footer-menu-1 {
+    background-color: #39aae1;   
+}
+
+.footer-menu-2 {
+    background-color: #0079c7;
+}
+.footer-menu-3 {
+    background-color: #2b4c99;
+}
+
+.footer-area {
+    display: flex;
+}
+
+.footer-item {
+    flex: 1;
+    color: #f1f1f1;
+    padding: 10px 0;
+}
+
+footer .widget-title-text {
+    color: #f1f1f1;
+} 
+
+.footer-copy {
+    margin-top: 30px;
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+    color: #5c5c5c;
+}
+
+
+
+.menuMobile {
+    display: none;
+    height: 40px;
+    width: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+}
+
+.menu-mobile-line {
+    height: 4px;
+    background-color: #39aae1;
+    border-radius: 1px;
+}
+
+
+/* Responsividade */
+
+@media (max-width: 720px) {
+
+    .departament-area {
+        justify-content: space-around;
+    }
+    
+    .departament {
+        margin: 10px 10px;
+    }
+
+    .banner-headline{
+        padding: 20px;
+    }
+    .banner-headline h1 {
+        font-size: 30px;
+    }
+    .banner-headline h2 {
+        font-size: 15px;
+    }
+    .banner-options {
+        height: auto;
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section {
+        padding: 20px;
+    }
+
+    #geral aside {
+        padding: 20px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+    }
+    .footer-area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .footer-copy {
+        padding-left: 20px;
+    }
+
+    header .container {
+        flex-direction: row;
+    }
+
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        text-align: center;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menuMobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }  
+}
+
+
+
